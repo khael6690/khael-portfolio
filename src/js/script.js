@@ -24,10 +24,20 @@ window.onscroll = () => {
                 links.classList.remove('active')
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
             })
+
         }
     })
 
     let header = document.querySelector('header')
+    const fixedNav = header.offsetTop
+    const backTop = document.querySelector('#to-top')
+
+    if (fixedNav == 0) {
+        backTop.style.display = "none"
+    }
+    else{
+        backTop.style.display = "block"
+    }
 
     header.classList.toggle('sticky', window.scrollY > 100)
 
@@ -42,15 +52,15 @@ ScrollReveal({
     delay: 200,
 })
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .about-study h1', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-fill, .about-study', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Web Developer', 'UI / UX Designer'],
+    strings: ['Frontend Web Developer', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 50,
-    backDelay: 50,
+    backDelay: 500,
     loop: true,
 })

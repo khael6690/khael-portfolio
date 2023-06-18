@@ -19,7 +19,7 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -101,7 +101,8 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 40vw;
+    height: 40vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -155,9 +156,59 @@ span {
     background: var(--secound-bg-color);
 }
 
+.about-study h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-study ol {
+    position: relative;
+    border-left: 4px solid var(--text-color);
+}
+
+.about-study li {
+    list-style: none;
+}
+
+.about-study li h2,
+.about-study li p {
+    font-size: 1.5rem;
+    padding-left: 1.7rem;
+    /* padding-top: 2rem; */
+}
+
+.about-study-fill {
+    display: block;
+    position: absolute;
+    left: -14px;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-study {
+    background: var(--text-color);
+    color: var(--bg-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+.about-img img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--text-color);
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.601);
 }
 
 .about-content h2 {
@@ -332,9 +383,31 @@ span {
     cursor: pointer;
 }
 
+#to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: block;
+}
+
+#to-top:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
@@ -478,11 +551,12 @@ span {
     }
 
     .home-img img {
-        width: 80vw;
+        width: 100vw;
     }
 
     .about-img img {
-        width: 80vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     .services-container .services-box {
