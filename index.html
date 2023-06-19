@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UMAM- Portfolio Website</title>
+    <title>UMAM- project Website</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
@@ -19,8 +19,8 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Sevices</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Project</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -31,9 +31,8 @@
         <h1>Khaerul Umam</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
-          Proficient in HTML, PHP, CSS, and
-            JavaScript programming languages. Currently learning ReactJS and
-            Figma for UI/UX design.
+          Proficient in HTML, PHP, CSS, and JavaScript programming languages.
+          Currently learning ReactJS and Figma for UI/UX design.
         </p>
         <div class="social-media">
           <a href="#"><i class="bx bxl-facebook"></i></a>
@@ -61,6 +60,7 @@
     <section class="about" id="about">
       <div class="about-img">
         <img src="./src/img/me.png" alt="myphoto" />
+        <span class="circle-spin"></span>
       </div>
       <div class="about-content">
         <div class="about-fill">
@@ -103,117 +103,174 @@
       </div>
     </section>
 
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+    <section class="skill" id="skill">
+      <h2 class="heading">My <span>Skills</span></h2>
 
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
+      <div class="skill-container">
+        <div class="skill-box">
+          <h3>HTML</h3>
+          <img src="./src/img/html.svg" alt="HTML" />
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            qui laborum asperiores deleniti voluptatem possimus quibusdam! At
-            cupiditate voluptatem nulla!
+            Building blocks of the web. HTML provides the structure and content
+            for stunning web pages.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            class="btn"
+            >Read More</a
+          >
         </div>
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
+        <div class="skill-box">
+          <h3>CSS</h3>
+          <img src="./src/img/css.svg" alt="CSS" />
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            qui laborum asperiores deleniti voluptatem possimus quibusdam! At
-            cupiditate voluptatem nulla!
+            Enhancing style and visual appeal. CSS adds artistic flair by
+            controlling layout, color, and design of web pages.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="btn"
+            >Read More</a
+          >
         </div>
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
+        <div class="skill-box">
+          <h3>JavaScript</h3>
+          <img src="./src/img/js.svg" alt="JS" />
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            qui laborum asperiores deleniti voluptatem possimus quibusdam! At
-            cupiditate voluptatem nulla!
+            Dynamic interactivity. JavaScript brings web pages to life by adding
+            animated effects, form validation, and responsive user interactions.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            class="btn"
+            >Read More</a
+          >
+        </div>
+        <div class="skill-box">
+          <h3>Bootstrap</h3>
+          <img src="./src/img/bootstrap.svg" alt="bootstrap" />
+          <p>
+            Streamlining web development. Bootstrap is a popular front-end
+            framework that simplifies and accelerates the process of creating
+            responsive and visually appealing websites.
+          </p>
+          <a href="https://getbootstrap.com/" class="btn">Read More</a>
+        </div>
+        <div class="skill-box">
+          <h3>Tailwind CSS</h3>
+          <img src="./src/img/tailwind.svg" alt="tailwind" />
+          <p>
+            Highly customizable styling made easy. Tailwind CSS is a
+            utility-first CSS framework that provides a comprehensive set of
+            pre-built styling classes, allowing developers to quickly create
+            unique and flexible designs for their web projects.
+          </p>
+          <a href="https://tailwindcss.com/" class="btn">Read More</a>
+        </div>
+        <div class="skill-box">
+          <h3>ReactJS</h3>
+          <img src="./src/img/react.svg" alt="ReactJS" />
+          <p>
+            Building dynamic user interfaces. React is a powerful JavaScript
+            library for building interactive and reusable UI components. It
+            enables developers to create fast, efficient, and scalable web
+            applications that provide a seamless user experience.
+          </p>
+          <a href="https://react.dev/" class="btn">Read More</a>
+        </div>
+        <div class="skill-box">
+          <h3>MySql</h3>
+          <img src="./src/img/mysql.svg" alt="mysql" />
+          <p>
+            Powerful and reliable database management. MySQL is a widely-used
+            open-source relational database management system. It provides a
+            robust and scalable solution for storing, managing, and retrieving
+            structured data. With its speed, reliability, and extensive
+            features, MySQL is a popular choice for various web applications.
+          </p>
+          <a href="https://www.mysql.com/" class="btn">Read More</a>
+        </div>
+        <div class="skill-box">
+          <h3>Lavarel</h3>
+          <img src="./src/img/laravel.svg" alt="laravel" />
+          <p>
+            Elegant PHP framework for web development. Laravel is a feature-rich
+            PHP framework known for its elegant syntax and extensive set of
+            tools and libraries.
+          </p>
+          <a href="https://laravel.com/" class="btn">Read More</a>
         </div>
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="project" id="project">
       <h2 class="heading">Lastest <span>Project</span></h2>
 
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium amet perspiciatis illum, beatae fugit vero excepturi
-              laboriosam veritatis pariatur hic.
-            </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+      <div class="project-container">
+        <div class="project-box">
+          <img src="./src/img/project/calculator.png" alt="Project" />
+          <div class="project-layer">
+            <h4>Calculator with JS</h4>
+            <p>Web App Calculator build with JavaScript and added style css</p>
+            <a href="https://calculator-khael.vercel.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
-        <div class="portfolio-box">
-          <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
+        <div class="project-box">
+          <img src="./src/img/project/notes.png" alt="Project" />
+          <div class="project-layer">
+            <h4>App Notes</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium amet perspiciatis illum, beatae fugit vero excepturi
-              laboriosam veritatis pariatur hic.
+              Note app to add your notes. This app build with ReactJS and added
+              style from dicoding.
             </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+            <a href="https://notes-khael.vercel.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
-        <div class="portfolio-box">
-          <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
+        <div class="project-box">
+          <img src="./src/img/project/todo.png" alt="Project" />
+          <div class="project-layer">
+            <h4>To-do List</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium amet perspiciatis illum, beatae fugit vero excepturi
-              laboriosam veritatis pariatur hic.
+              To-do List App for add your daily list. This app build with
+              HTML,CSS, and JavaScript
             </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+            <a href="https://khael-todolist.vercel.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
-        <div class="portfolio-box">
-          <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium amet perspiciatis illum, beatae fugit vero excepturi
-              laboriosam veritatis pariatur hic.
-            </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+        <div class="project-box">
+          <img src="./src/img/project/ci4pos.png" alt="Project" />
+          <div class="project-layer">
+            <h4>System POS Apotek CI4</h4>
+            <p>System Point Of Sales Apotek build with Codeigniter version 4</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="portfolio-box">
+        <div class="project-box">
           <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium amet perspiciatis illum, beatae fugit vero excepturi
               laboriosam veritatis pariatur hic.
             </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+            <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="portfolio-box">
+        <div class="project-box">
           <img src="https://via.placeholder.com/400x400" alt="Project" />
-          <div class="portfolio-layer">
+          <div class="project-layer">
             <h4>Web Design</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium amet perspiciatis illum, beatae fugit vero excepturi
               laboriosam veritatis pariatur hic.
             </p>
-            <a href="$"><i class="bx bx-link-external"></i></a>
+            <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
       </div>
@@ -222,22 +279,47 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <h3 class="alert">
+        Your Message Success!
+        <button class="btn-close"><i class="bx bx-x"></i></button>
+      </h3>
+      <form role="form" id="contactForm" name="submit-to-google-sheet">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+            required />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last Name"
+            required />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject Mail"
+            required />
         </div>
         <textarea
-          name=""
-          id=""
+          id="message"
+          name="message"
           cols="30"
           rows="10"
-          placeholder="Your Message..."></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+          placeholder="Your Message..."
+          required></textarea>
+        <input type="submit" value="Send Message" class="btn btn-submit" />
       </form>
     </section>
 

@@ -1,3 +1,34 @@
+const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxNx_rg376Nr-XC_qepgyiGIw3Y7Eq4DlSGUPvrU15yTzb1M_xGJRmQYVWyudjp0W1GEQ/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+            // Success message
+            const alert = document.querySelector('.alert')
+            alert.style.display = "block"
+            //clear all fields
+            form.reset()
+            console.log("Success!", response);
+        })
+        .catch((error) => {
+            // Fail message
+
+            //clear all fields
+            console.error("Error!", error.message);
+        });
+})
+
+
+const close = document.querySelector('.btn-close')
+close.addEventListener('click', (e) => {
+    e.preventDefault()
+    const alert = document.querySelector('.alert')
+    alert.style.display = "none"
+})
+
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 
@@ -35,7 +66,7 @@ window.onscroll = () => {
     if (fixedNav == 0) {
         backTop.style.display = "none"
     }
-    else{
+    else {
         backTop.style.display = "block"
     }
 
@@ -53,7 +84,7 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.home-content, .heading, .about-study h1', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skill-container, .project-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-fill, .about-study', { origin: 'right' });
 
