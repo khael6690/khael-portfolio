@@ -4,9 +4,11 @@ const form = document.forms["submit-to-google-sheet"];
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    $('.btn-submit').html('<i class="fa fa-spinner fa-spin" style="font-size:16px;"></i>');
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
             // Success message
+            $('.btn-submit').html('Send Message');
             const alert = document.querySelector('.alert')
             alert.style.display = "block"
             //clear all fields
@@ -75,18 +77,6 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('active')
 }
-
-ScrollReveal({
-    // reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-})
-
-ScrollReveal().reveal('.home-content, .heading, .about-study h1', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skill-container, .project-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-fill, .about-study', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
     strings: ['Frontend Web Developer', 'UI/UX Designer'],

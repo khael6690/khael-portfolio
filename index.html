@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UMAM- project Website</title>
+    <title>Khaerul Umam - Portfolio Website</title>
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
@@ -26,11 +36,11 @@
     </header>
 
     <section class="home" id="home">
-      <div class="home-content">
+      <div class="home-content" data-aos="fade-down">
         <h3>Hello, It's Me</h3>
-        <h1>Khaerul Umam</h1>
+        <h1 data-aos="fade-right">Khaerul Umam</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p>
+        <p data-aos="fade-left">
           Proficient in HTML, PHP, CSS, and JavaScript programming languages.
           Currently learning ReactJS and Figma for UI/UX design.
         </p>
@@ -52,21 +62,21 @@
         >
       </div>
 
-      <div class="home-img">
+      <div class="home-img" data-aos="fade-up">
         <img src="./src/img/hero.svg" alt="myphoto" />
       </div>
     </section>
 
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-right">
         <img src="./src/img/me.png" alt="myphoto" />
         <span class="circle-spin"></span>
       </div>
       <div class="about-content">
         <div class="about-fill">
-          <h2 class="heading">About <span>Me</span></h2>
-          <h3>Frontend Developer!</h3>
-          <p>
+          <h2 class="heading" data-aos="fade-down">About <span>Me</span></h2>
+          <h3 data-aos="fade-left">Frontend Developer!</h3>
+          <p data-aos="fade-left">
             Graduate of Computer Informatics Engineering from STMIK Indonesia
             Mandiri Bandung. Experienced in web development and database
             administration for 1 year. Proficient in HTML, PHP, CSS, and
@@ -78,8 +88,8 @@
           </p>
         </div>
         <div class="about-study">
-          <h1>Pendidikan</h1>
-          <ol class="about-study-list">
+          <h1 data-aos="fade-down">Pendidikan</h1>
+          <ol class="about-study-list" data-aos="fade-in">
             <li>
               <div class="about-study-fill">
                 <svg
@@ -91,12 +101,12 @@
                     d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
                 </svg>
               </div>
-              <h2>LP3I Cirebon Collage</h2>
-              <p>D2 - Teknik Informatika Komputer</p>
-              <p>Jun 2017 - Feb 2019</p>
-              <h2>STMIK Indonesia Mandiri Bandung</h2>
-              <p>S1 - Teknik Informatika Komputer</p>
-              <p>Feb 2019 - Mar 2021</p>
+              <h2 data-aos="fade-left">LP3I Cirebon Collage</h2>
+              <p data-aos="fade-left">D2 - Teknik Informatika Komputer</p>
+              <p data-aos="fade-left">Jun 2017 - Feb 2019</p>
+              <h2 data-aos="fade-left">STMIK Indonesia Mandiri Bandung</h2>
+              <p data-aos="fade-left">S1 - Teknik Informatika Komputer</p>
+              <p data-aos="fade-left">Feb 2019 - Mar 2021</p>
             </li>
           </ol>
         </div>
@@ -104,9 +114,9 @@
     </section>
 
     <section class="skill" id="skill">
-      <h2 class="heading">My <span>Skills</span></h2>
+      <h2 class="heading" data-aos="fade-down">My <span>Skills</span></h2>
 
-      <div class="skill-container">
+      <div class="skill-container" data-aos="fade-up">
         <div class="skill-box">
           <h3>HTML</h3>
           <img src="./src/img/html.svg" alt="HTML" />
@@ -202,10 +212,10 @@
     </section>
 
     <section class="project" id="project">
-      <h2 class="heading">Lastest <span>Project</span></h2>
+      <h2 class="heading" data-aos="fade-down">Lastest <span>Project</span></h2>
 
       <div class="project-container">
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/calculator.png" alt="Project" />
           <div class="project-layer">
             <h4>Calculator with JS</h4>
@@ -215,7 +225,7 @@
             ></a>
           </div>
         </div>
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/notes.png" alt="Project" />
           <div class="project-layer">
             <h4>App Notes</h4>
@@ -228,7 +238,7 @@
             ></a>
           </div>
         </div>
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/todo.png" alt="Project" />
           <div class="project-layer">
             <h4>To-do List</h4>
@@ -241,7 +251,7 @@
             ></a>
           </div>
         </div>
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/ci4pos.png" alt="Project" />
           <div class="project-layer">
             <h4>System POS Apotek CI4</h4>
@@ -249,7 +259,7 @@
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="https://via.placeholder.com/400x400" alt="Project" />
           <div class="project-layer">
             <h4>Web Design</h4>
@@ -261,7 +271,7 @@
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <img src="https://via.placeholder.com/400x400" alt="Project" />
           <div class="project-layer">
             <h4>Web Design</h4>
@@ -277,13 +287,17 @@
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
+      <h2 class="heading" data-aos="fade-down">Contact <span>Me!</span></h2>
 
       <h3 class="alert">
         Your Message Success!
         <button class="btn-close"><i class="bx bx-x"></i></button>
       </h3>
-      <form role="form" id="contactForm" name="submit-to-google-sheet">
+      <form
+        role="form"
+        id="contactForm"
+        name="submit-to-google-sheet"
+        data-aos="fade-up">
         <div class="input-box">
           <input
             type="text"
@@ -319,7 +333,12 @@
           rows="10"
           placeholder="Your Message..."
           required></textarea>
-        <input type="submit" value="Send Message" class="btn btn-submit" />
+        <button
+          type="submit"
+          id="as"
+          class="btn btn-submit">
+          Send Message
+          </button>
       </form>
     </section>
 
@@ -340,9 +359,17 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
 
     <script src="src/js/script.js"></script>
   </body>

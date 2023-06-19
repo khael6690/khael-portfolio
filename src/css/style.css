@@ -20,7 +20,7 @@
 
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -31,7 +31,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 2rem 9% 2rem;
 }
 
 .header {
@@ -137,9 +137,9 @@ span {
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 .8rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--secound-bg-color);
+  color: rgba(0, 0, 0, 0.846);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -153,7 +153,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3.4rem;
   background: var(--secound-bg-color);
 }
 
@@ -172,10 +172,10 @@ span {
 .about-img img {
   width: 20vw;
   height: 20vw;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   border: 0.2rem solid var(--main-color);
-  background-color: rgba(0, 0, 0, 0.601);
+  background-color: rgba(0, 0, 0, 0.352);
   margin: 1.5rem;
 }
 
@@ -187,11 +187,11 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-left: 0.2rem solid var(--main-color);
-  border-right: 0.2rem solid var(--main-color);
-  border-top: 0.2rem solid var(--secound-bg-color);
-  border-bottom: 0.2rem solid var(--secound-bg-color);
-  animation: borderSpinner 8s linear infinite;
+  border-left: 0.5rem solid var(--main-color);
+  border-right: 0.5rem solid var(--main-color);
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  animation: borderSpinner 5s linear infinite;
 }
 
 .about-content h2 {
@@ -256,17 +256,18 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 16px;
 }
 
 .skill-container .skill-box {
-  flex: 1 1 400px;
+  flex: 0 1 344px;
   background: var(--secound-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  height: 400px;
 }
 
 .skill-container .skill-box:hover {
@@ -283,7 +284,7 @@ span {
 }
 
 .skill-box img {
-  width: 64px;
+  width: 8vw;
 }
 
 .skill-box h3 {
@@ -306,7 +307,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .project-container .project-box {
@@ -319,9 +320,10 @@ span {
 
 .project-box img {
   width: 100%;
-  height: 304px;
-  object-fit: cover;
+  height: 312px;
+  object-fit: fill;
   transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.544);
 }
 
 .project-box:hover img {
@@ -551,7 +553,7 @@ span {
   }
 
   .about {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .about img {
@@ -609,7 +611,11 @@ span {
   }
 
   .skill-container .skill-box {
-    margin: 0 1rem 0 1rem;
+    margin: auto;
+  }
+
+  .skill-box img{
+    width: 20vw;
   }
 
   .project-container .project-box {
