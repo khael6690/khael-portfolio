@@ -587,7 +587,11 @@ span {
 
   section {
     min-height: 100vh;
-    padding: 8px;
+    padding: 16px;
+  }
+
+  .home {
+    justify-content: start;
   }
 
   .home-content {
