@@ -161,6 +161,7 @@ span {
   text-align: center;
   font-size: 4.5rem;
 }
+
 .about-img {
   position: relative;
   border-radius: 50%;
@@ -321,7 +322,7 @@ span {
 .project-box img {
   width: 100%;
   height: 312px;
-  object-fit: fill;
+  object-fit: cover;
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.544);
 }
@@ -584,6 +585,11 @@ span {
     font-size: 50%;
   }
 
+  section {
+    min-height: 100vh;
+    padding: 8px;
+  }
+
   .home-content {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
@@ -614,7 +620,7 @@ span {
     margin: auto;
   }
 
-  .skill-box img{
+  .skill-box img {
     width: 20vw;
   }
 
