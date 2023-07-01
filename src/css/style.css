@@ -263,6 +263,7 @@ span {
 .skill-container .skill-box {
   flex: 0 1 200px;
   /* background: var(--secound-bg-color); */
+  border: none;
   padding: 2rem 2rem 5rem;
   border-radius: 2rem;
   text-align: center;
@@ -622,7 +623,7 @@ span {
   }
 
   .skill-box img {
-    width: 20vw;
+    width: 30vw;
   }
 
   .project-container .project-box {
@@ -631,6 +632,10 @@ span {
 }
 
 @media (max-width: 365px) {
+  .skill-container .skill-box {
+    border: none;
+  }
+
   .footer {
     flex-direction: column;
   }
