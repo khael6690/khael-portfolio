@@ -601,6 +601,10 @@ span {
     margin: 2rem;
   }
 
+  .skill-box {
+    border: none;
+  }
+
   .contact form {
     margin: 2rem;
   }
@@ -624,6 +628,7 @@ span {
 
   .skill-box img {
     width: 30vw;
+    height: 30vw;
   }
 
   .project-container .project-box {
@@ -633,7 +638,7 @@ span {
 
 @media (max-width: 365px) {
   .skill-container .skill-box {
-    border: none;
+    border-color: transparent;
   }
 
   .footer {
