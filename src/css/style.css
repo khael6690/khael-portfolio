@@ -601,6 +601,10 @@ span {
     margin: 2rem;
   }
 
+  .skill-box {
+    border: none;
+  }
+
   .contact form {
     margin: 2rem;
   }
