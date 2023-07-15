@@ -304,7 +304,7 @@ span {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
@@ -320,7 +320,7 @@ span {
 .project-box img {
   width: 100%;
   height: 312px;
-  object-fit: cover;
+  object-fit: fill;
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.544);
 }
@@ -469,7 +469,7 @@ span {
   font-size: 1.6rem;
 }
 
-/* breakpoints */
+/* breakpoints responsive */
 
 @media (max-width: 1200px) {
   html {
@@ -637,9 +637,6 @@ span {
 }
 
 @media (max-width: 365px) {
-  .skill-container .skill-box {
-    border-color: transparent;
-  }
 
   .footer {
     flex-direction: column;
