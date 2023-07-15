@@ -1,3 +1,12 @@
+AOS.init({
+    // disable: "phone",
+    offset: 120,
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: "ease", // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+});
+
 const scriptURL =
     "https://script.google.com/macros/s/AKfycbxNx_rg376Nr-XC_qepgyiGIw3Y7Eq4DlSGUPvrU15yTzb1M_xGJRmQYVWyudjp0W1GEQ/exec";
 const form = document.forms["submit-to-google-sheet"];

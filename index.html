@@ -9,15 +9,15 @@
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
-
+    <!-- font-awesome css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <!-- css aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <!-- jquery 3 -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-
+    <!-- style css -->
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
@@ -27,11 +27,11 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skill">Skills</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="active nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skill" class="nav-link">Skills</a>
+        <a href="#project" class="nav-link">Project</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
 
@@ -41,25 +41,29 @@
         <h1 data-aos="fade-right">Khaerul Umam</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <p data-aos="fade-left">
-          Can work using HTML, PHP, CSS, and JavaScript programming languages.
+          working with HTML, PHP, CSS, and JavaScript programming languages.
           Currently learning ReactJS, Laravel and Figma for UI/UX design.
         </p>
         <div class="social-media">
           <!-- <a href="#"><i class="bx bxl-facebook"></i></a> -->
-          <a href="https://github.com/khael6690"
+          <a class="text-decoration-none" href="https://github.com/khael6690"
             ><i class="bx bxl-github"></i
           ></a>
-          <a href="https://www.instagram.com/umam6690/"
+          <a
+            class="text-decoration-none"
+            href="https://www.instagram.com/umam6690/"
             ><i class="bx bxl-instagram-alt"></i
           ></a>
-          <a href="https://www.linkedin.com/in/khaerulumam05/"
+          <a
+            class="text-decoration-none"
+            href="https://www.linkedin.com/in/khaerulumam05/"
             ><i class="bx bxl-linkedin"></i
           ></a>
         </div>
         <a
           href="https://drive.google.com/file/d/1ZQrnOcxh7yz3-P3Vtc9aWr71OyRNqYJk/view?usp=sharing"
           target="_blank"
-          class="btn"
+          class="mybtn text-decoration-none"
           >Download CV</a
         >
       </div>
@@ -169,7 +173,7 @@
         <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/calculator.png" alt="Project" />
           <div class="project-layer">
-            <h4>Calculator with JS</h4>
+            <h4>Calculator App</h4>
             <p>Web App Calculator build with JavaScript and added style css</p>
             <a href="https://calculator-khael.vercel.app/"
               ><i class="bx bx-link-external"></i
@@ -179,7 +183,7 @@
         <div class="project-box" data-aos="fade-up">
           <img src="./src/img/project/notes.png" alt="Project" />
           <div class="project-layer">
-            <h4>App Notes</h4>
+            <h4>React App Notes</h4>
             <p>
               Note app to add your notes. This app build with ReactJS and added
               style from dicoding.
@@ -253,14 +257,12 @@
             id="firstname"
             name="firstname"
             placeholder="First Name"
-            data-aos="fade-in"
             required />
           <input
             type="text"
             id="lastname"
             name="lastname"
             placeholder="Last Name"
-            data-aos="fade-in"
             required />
         </div>
         <div class="input-box">
@@ -269,14 +271,12 @@
             id="email"
             name="email"
             placeholder="Your Email"
-            data-aos="fade-in"
             required />
           <input
             type="text"
             id="subject"
             name="subject"
             placeholder="Subject Mail"
-            data-aos="fade-in"
             required />
         </div>
         <textarea
@@ -285,9 +285,8 @@
           cols="30"
           rows="10"
           placeholder="Your Message..."
-          data-aos="fade-in"
           required></textarea>
-        <button type="submit" id="as" class="btn btn-submit">
+        <button type="submit" id="as" class="mybtn btn-submit">
           Send Message
         </button>
       </form>
@@ -310,20 +309,11 @@
       </div>
     </footer>
 
+    <!-- type animation js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+    <!-- aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        // disable: "phone",
-        offset: 120,
-        delay: 100, // values from 0 to 3000, with step 50ms
-        duration: 1000, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: true, // whether animation should happen only once - while scrolling down
-      });
-    </script>
-
+    <!-- script js -->
     <script src="src/js/script.js"></script>
   </body>
 </html>
