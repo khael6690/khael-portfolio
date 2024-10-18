@@ -18,6 +18,22 @@
   --main-color: #0ef;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -212,7 +228,8 @@ span {
 .about-section {
   display: flex;
   align-items: center;
-  gap: 3.4rem;
+  gap: 4rem;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -304,22 +321,6 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .skill-container .skill-box {
@@ -436,6 +437,64 @@ span {
   color: var(--secound-bg-color);
 }
 
+.achieve h2 {
+  margin-bottom: 2.4rem;
+}
+
+.achieve-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  justify-content: center;
+}
+
+.achieve-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background: var(--secound-bg-color);
+  padding: 24px;
+  border-radius: 1rem;
+  width: 300px;
+  min-height: 230px;
+  max-width: 300px;
+}
+
+.achieve-box a {
+  text-decoration: none;
+  padding: 4px;
+}
+
+.achieve-box h2 {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.achieve-box p {
+  font-size: 1.2rem;
+}
+
+.achieve-box p.from {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0 4px 0;
+}
+
+.achieve-box a i:hover{
+  background: var(--bg-color);
+}
+
+.achieve-box a i {
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.achieve-info img{
+  width: 5rem;
+  height: 5rem;
+}
+
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -459,6 +518,10 @@ span {
   transform: scale(1.2);
 }
 
+.contact {
+  background: var(--secound-bg-color);
+}
+
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
@@ -476,7 +539,7 @@ span {
 .contact form textarea {
   padding: 1.5rem;
   font-size: 1.6rem;
-  background: var(--secound-bg-color);
+  background: var(--bg-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   color: var(--text-color);
@@ -524,7 +587,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--secound-bg-color);
+  /* background: var(--secound-bg-color); */
 }
 
 .footer-text p {
