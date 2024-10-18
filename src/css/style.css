@@ -209,6 +209,44 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+  flex-wrap: wrap;
+}
+
+.about-work h1 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-work ol {
+  position: relative;
+  border-left: 4px solid var(--text-color);
+}
+
+.about-work li {
+  list-style: none;
+}
+
+.about-work li h2,
+.about-work li p {
+  font-size: 1.5rem;
+  padding-left: 1.7rem;
+  /* padding-top: 2rem; */
+}
+
+.about-work-fill {
+  display: block;
+  position: absolute;
+  left: -14px;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-study h1 {
   font-size: 3rem;
   margin-bottom: 1.2rem;
@@ -241,6 +279,14 @@ span {
 }
 
 .icon-study {
+  background: var(--text-color);
+  color: var(--bg-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.icon-work {
   background: var(--text-color);
   color: var(--bg-color);
   width: 24px;
